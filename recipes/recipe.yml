@@ -12,15 +12,15 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   - from-file: modules/default-flatpaks.yml
   - from-file: modules/dnf.yml
   - from-file: modules/fonts.yml
   # - from-file: modules/gnome-extensions.yml
   - from-file: modules/systemd.yml
   - from-file: modules/scripts.yml
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
+  
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
