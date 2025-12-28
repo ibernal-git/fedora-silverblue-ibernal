@@ -10,7 +10,6 @@ configurations:
       - org.gnome.Loupe
       - app.zen_browser.zen
       - be.alexandervanhee.gradia
-      - com.onepassword.OnePassword
       - com.github.tchx84.Flatseal
       - com.google.Chrome
       - com.jgraph.drawio.desktop
