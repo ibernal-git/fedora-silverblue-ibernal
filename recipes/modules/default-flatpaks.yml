@@ -1,0 +1,35 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+type: default-flatpaks
+configurations:
+  - notify: true # Send notification after install/uninstall is finished (true/false)
+    scope: system
+    # If no repo information is specified, Flathub will be used by default
+    install: # system flatpaks we want all users to have and not remove
+      - org.mozilla.firefox
+      - org.gnome.Loupe
+      - app.zen_browser.zen
+      - be.alexandervanhee.gradia
+      - com.onepassword.OnePassword
+      - com.github.tchx84.Flatseal
+      - com.google.Chrome
+      - com.jgraph.drawio.desktop
+      - com.obsproject.Studio
+      - io.dbeaver.DBeaverCommunity
+      - io.github.martchus.syncthingtray
+      - org.cryptomator.Cryptomator
+      - org.gnome.meld
+      - org.gustavoperedo.FontDownloader
+      - org.libreoffice.LibreOffice
+      - org.torproject.torbrowser-launcher
+      - org.zaproxy.ZAP
+      - com.usebottles.bottles
+      - com.brave.Browser
+      - com.spotify.Client
+      - com.bitwarden.desktop
+      - org.kde.krita
+      - org.inkscape.Inkscape
+      - fr.handbrake.ghb
+      - org.kde.kleopatra
+      - com.vscodium.codium
+  - scope: user # Also add Flathub user repo, but no user packages
